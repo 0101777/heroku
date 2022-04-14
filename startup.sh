@@ -55,7 +55,7 @@ cat << EOF > /etc/v2ray/config.json
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                  "path": "$UUID-vmess"
+                  "path": "vmess"
                 }
             }
         }
