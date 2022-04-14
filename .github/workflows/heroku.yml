@@ -1,4 +1,4 @@
-name: heroku-deploy-stop-start-destroy
+name: auto-heroku-deploy-stop-start-destroy
 
 on:
   schedule:
