@@ -38,6 +38,26 @@ cat << EOF > /etc/v2ray/config.json
                 "network": "ws",
                 "security": "none"
             }
+        },
+        {
+            "port": $PORT,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "$UUID",
+                        "level": 0
+                    }
+                ],
+                 "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                  "path": "$UUID-vmess"
+                }
+            }
         }
     ],
     "outbounds": [
